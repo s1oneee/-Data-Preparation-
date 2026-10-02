@@ -27,7 +27,6 @@ def generate_users_data(count=100):
         writer.writerow(["Имя", "Фамилия", "Email"])
 
         for i in range(count):
-            # Сначала случайно выбираем пол (0 - мужской, 1 - женский)
             gender = random.choice(["male", "female"])
 
             if gender == "male":
